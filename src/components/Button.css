@@ -1,0 +1,60 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  min-height: 3rem;
+  padding: 0.75rem 1.25rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  cursor: pointer;
+  transition: background 180ms var(--ease), border-color 180ms var(--ease), transform 180ms var(--ease), color 180ms var(--ease);
+}
+
+.btn svg {
+  width: 1.05rem;
+  height: 1.05rem;
+}
+
+.btn--primary {
+  background: var(--color-electric);
+  color: var(--color-white);
+}
+
+.btn--primary:hover {
+  background: var(--color-action-hover);
+}
+
+.btn--primary:active {
+  background: var(--color-action-pressed);
+}
+
+.btn--ghost {
+  background: transparent;
+  color: var(--color-text-on-dark);
+  border-color: var(--color-line);
+}
+
+.btn--ghost:hover {
+  border-color: var(--color-electric-bright);
+  color: var(--color-white);
+}
+
+.btn--dark-ghost {
+  background: transparent;
+  color: var(--color-text);
+  border-color: var(--color-line-dark);
+}
+
+.btn--dark-ghost:hover {
+  border-color: var(--color-electric);
+  color: var(--color-electric);
+}
+
+.btn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
